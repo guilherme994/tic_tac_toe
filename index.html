@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- ---------- STYLE---------- -->
+
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- ---------- FONTS---------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- ---------- TITLE ---------- -->
+
+        <h1>Tic Tac Toe</h1>
+
+        <!-- ---------- BLOCKS ---------- -->
+
+        <div class="grid">
+            
+            <div id="0" class="block"></div>
+            <div id="1" class="block"></div>
+            <div id="2" class="block"></div>
+
+            <div id="3" class="block"></div>
+            <div id="4" class="block"></div>
+            <div id="5" class="block"></div>
+
+            <div id="6" class="block"></div>
+            <div id="7" class="block"></div>
+            <div id="8" class="block"></div>
+            
+        </div>
+        
+        <!-- ---------- BUTTONS ---------- -->
+
+        <div class="buttons">
+            <button class="reset" onclick="restartGame()">Reset</button>
+            <button class="reset" onclick="scoreReset()">Reset Score</button>
+        </div>
+        <br>
+        
+        <!-- ---------- RESULTS ---------- -->
+        
+        <div class="boxRes">
+            <input class="item1" type="text" name="" id="namePlayer1" value="Player 1" size="9">
+            <input class="item2" type="text" name="" id="namePlayer2" value="Player 2" size="9">
+
+            <div id="resPlayer-1" class="results player-1 item3"></div>
+            <div id="resPlayer-2" class="results player-2 item4"></div>
+        </div>
+
+    </div>
+
+    <!-- ---------- SCRIPTS ---------- -->
+
+    <script src="game.js"></script>
+    <script src="interface.js"></script>
+
+</body>
+</html>

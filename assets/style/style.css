@@ -1,0 +1,192 @@
+/*---------- RESET ----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+
+/*---------- LAYOUT ----------*/
+
+html{
+    height: 100%;
+    background-image: url(../images/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid{
+    width: 310px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    margin: auto;
+
+}
+
+.container{
+    text-align: center;
+    margin: auto;
+}
+
+.boxRes {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 620px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to top left, rgba(25, 134, 243, 0.247), rgba(226, 121, 126, 0.247));
+    border-radius: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 310px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(245, 245, 245, 0.897);
+    border-radius: 3px;
+    position: relative;
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    margin: 5rem;
+    margin-top: 8rem;
+    color: rgb(25, 134, 243);
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+/*---------- BUTTONS ----------*/
+
+.reset {
+    width: 150px;
+    background-image: linear-gradient(to top right, #73C9A0, #D275D2);
+    color: rgb(245, 245, 245);
+    font-size: 1.3rem;
+}
+
+.reset:hover {
+    background-image: linear-gradient(to top right, rgba(115, 201, 159, 0.76), rgba(210, 117, 210, 0.76));
+    color: rgba(245, 245, 245, 0.76);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.336);
+
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border-radius: 3px;
+    border: none;
+    transition: 200ms;
+}
+
+/*---------- RESULTS ----------*/
+
+.results{
+    padding: 1rem;
+    border-radius: 50%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+.player-1{
+    color: #f05a38;
+}
+
+.player-2 {
+    color: #97a5d3;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#namePlayer1{
+    text-align: center;
+    color: #f05a38 ;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+#namePlayer2{
+    text-align: center;
+    color: #97a5d3 ;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+/*---------- SYMBOLS ----------*/
+
+.o::after{
+    content: "";
+    font-size: 100px;
+    color: rgba(245, 245, 245, 0);
+    background-image: url(../images/circulo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.x::after{
+    content: "";
+    font-size: 100px;
+    color: rgba(245, 245, 245, 0);
+    background-image: url(../images/equix.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+}
+
+/*---------- MEDIA QUERY----------*/
+
+@media screen and (max-width: 360px) {
+    html{
+        height: 100%;
+        background-image: url(../images/bg-1.jpg);
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+
+    h1{
+        margin: 2rem;
+        margin-top: 4rem;
+
+    }
+
+    .boxRes {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 310px;
+    }
+    button {
+        padding: 0.8rem;
+    
+    }
+    .item3 {
+        grid-row: 2 / 2;
+    }
+
+}
