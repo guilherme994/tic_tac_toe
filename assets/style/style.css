@@ -5,6 +5,7 @@
     padding: 0;
     font-family: cursive;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 
@@ -65,6 +66,19 @@ h1{
     color: rgb(25, 134, 243);
     font-size: 3rem;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+}
+
+p{
+    margin-top: 2rem;
+    color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+a{
+    color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /*---------- BUTTONS ----------*/
