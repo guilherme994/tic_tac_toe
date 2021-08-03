@@ -19,4 +19,4 @@ Este Projeto foi desenvolvido usando as seguintes tecnologias:
 
 <hr/>
 
-### Pode testar <a href="https://guilherme994.github.io/tic_tac_toe/">clicando aqui</a>.
+### Pode testar <a href="https://guilherme994.github.io/tic_tac_toe/" target="_blank">clicando aqui</a>.
